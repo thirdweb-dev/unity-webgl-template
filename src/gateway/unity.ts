@@ -15,7 +15,7 @@ class Unity {
       console.log("invoke called", route, payload);
       const ack_id = v4();
       this.thirdWeb.invokeRoute(route, JSON.parse(payload)).then(result => {
-        console.log("invoke route result");
+        console.log("invoke route result", result);
         const returnPayload = JSON.stringify({ ack_id, result });
         w.unityInstance.SendMessage("ThirdWeb", "Callback", returnPayload);
       });

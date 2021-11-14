@@ -17,7 +17,9 @@ function App() {
       }
 
       clearInterval(interval);
-      (window as any).createUnityInstance(canvasRef.current, (window as any).unityConfig);
+      (window as any).createUnityInstance(canvasRef.current, (window as any).unityConfig).then((unityInstance: any) => {
+        (window as any).unityInstance = unityInstance;
+      });
     }, 500);
   }, [canvasRef]);
   return (
