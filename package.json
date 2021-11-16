@@ -4,7 +4,8 @@
   "private": true,
   "dependencies": {
     "@3rdweb/react": "^1.0.1",
-    "@3rdweb/sdk": "^1.14.0",
+    "@3rdweb/sdk": "^1.16.1",
+    "@3rdweb/unity-bridge": "^1.0.1",
     "@craco/craco": "^6.4.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -14,6 +15,7 @@
     "@types/react": "^17.0.34",
     "@types/react-dom": "^17.0.11",
     "ethers": "^5.5.1",
+    "magic-sdk": "^6.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
